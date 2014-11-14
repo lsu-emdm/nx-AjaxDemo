@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>:: Nexus Ajax Demo ::</title>
+	<script type="text/javascript" src="lib/nexusUI.js"></script>
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+
+	<script>
+	
+		nx.onload = function() {
+
+			nx.colorize("#0af");
+			nx.sendsTo("ajax");
+			nx.setAjaxPath("lib/nexusOSCRelay.php");
+
+		}	
+
+	</script>
+
+</head>
+<body>
+	
+	<!-- Layout all of the UI Elements as Canvas Objects. -->
+	<canvas nx="button"></canvas>
+	<canvas nx="button"></canvas>
+	<canvas nx="button"></canvas>
+	<br>
+	<canvas nx="dial"></canvas>
+	<canvas nx="dial"></canvas>
+
+</body>	
+</html>

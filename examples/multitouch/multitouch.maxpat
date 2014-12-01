@@ -3,12 +3,11 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 1,
-			"revision" : 6,
-			"architecture" : "x86"
+			"minor" : 0,
+			"revision" : 8
 		}
 ,
-		"rect" : [ 0.0, 48.0, 716.0, 663.0 ],
+		"rect" : [ 549.0, 59.0, 716.0, 663.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,20 +27,6 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
-				"box" : 				{
-					"floatoutput" : 1,
-					"id" : "obj-8",
-					"maxclass" : "slider",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 294.5, 593.194214, 20.0, 140.0 ],
-					"size" : 1.0
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"fontname" : "Avenir Medium",
 					"fontsize" : 12.0,
@@ -177,9 +162,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 1,
-							"revision" : 6,
-							"architecture" : "x86"
+							"minor" : 0,
+							"revision" : 8
 						}
 ,
 						"rect" : [ 151.0, 56.0, 285.0, 305.0 ],
@@ -334,9 +318,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 1,
-							"revision" : 6,
-							"architecture" : "x86"
+							"minor" : 0,
+							"revision" : 8
 						}
 ,
 						"rect" : [ 25.0, 69.0, 192.0, 420.0 ],
@@ -892,7 +875,7 @@
 					"outlettype" : [ "list", "float", "float", "float", "float", "list", "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 310.5, 530.5, 214.0, 92.138885 ],
-					"setfilter" : [ 0, 3, 0, 0, 0, 158.0, 1.0, 2.366667, 0.0001, 22050.0, 0.0001, 16.0, 0.5, 25.0 ]
+					"setfilter" : [ 0, 3, 0, 0, 0, 0.0001, 1.0, 5.0, 0.0001, 22050.0, 0.0001, 16.0, 0.5, 25.0 ]
 				}
 
 			}
@@ -1168,21 +1151,6 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Avenir Medium",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-9",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 401.75, 67.0, 240.0, 39.0 ],
-					"text" : "Receive on the port and at the IP address defined in the nexusOSCRelay.php file"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Avenir Medium",
 					"fontsize" : 36.0,
 					"frgb" : 0.0,
 					"id" : "obj-3",
@@ -1218,7 +1186,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 417.5, 123.0, 241.0, 21.0 ],
-					"text" : "/tilt1/x -0.005"
+					"text" : "/multitouch1/touch4/y 0."
 				}
 
 			}
@@ -1745,15 +1713,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-72", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-29", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-8", 0 ]
 				}
 
 			}

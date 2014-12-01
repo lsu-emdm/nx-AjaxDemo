@@ -2,31 +2,28 @@
 <html>
 	<head>
 		<title>Envelope</title>
-		<script type="text/javascript" src="../jquery.js"></script>
-		<script type="text/javascript" src="../nexusUI.js"></script>
-		<script type="text/javascript" src="../../dev/envelope.js"></script>
+		<script type="text/javascript" src="../../lib/nexusUI.js"></script>
 		<script>
 		
 			nx.onload = function() {
 
+				//send to ajax and define php relay script path
 				nx.sendsTo("ajax");
-				nx.setAjaxPath("../nexusOSCrelay.php");
+				nx.setAjaxPath("../../lib/nexusOSCrelay.php");
 
 				nx.colorize("#0af");
-				nx.printOSC();
 
-				envelope2.start();
+				envelope1.start();
 
-				button1.sendsTo("js");
-				button1.mode = "impulse";
-				button1.response = function() {
-					envelope2.start();
-				}
+				button1.sendsTo("js")
+				button1.on('press', function(data) {
+					data==1 ? envelope1.start() : null;
+				})
 
 				dial1.sendsTo("js");
-				dial1.response = function(data) {
-					envelope2.duration = data*3;
-				}
+				dial1.on('value',function(data) {
+					envelope1.duration = data*1000;
+				})
 
 			}
 		
@@ -37,7 +34,6 @@
 	<body>
 			
 		<canvas nx="envelope"></canvas>
-		<canvas nx="envelope" style="width:300px;height:300px"></canvas>
 
 		<br><br>
 		<canvas nx="button"></canvas><br>

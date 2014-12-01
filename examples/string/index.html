@@ -2,39 +2,18 @@
 <html>
 	<head>
 		<title>String</title>
-		<script type="text/javascript" src="../jquery.js"></script>
-		<script type="text/javascript" src="../nexusUI.js"></script>
-		<!--<script type="text/javascript" src="../nexusWebAudio/js/gibberish_2.0.js"></script> -->
-		
+		<script type="text/javascript" src="../../lib/nexusUI.js"></script>
 		<script>
 		
 			nx.onload = function() {
-				nx.colorize("#0af");
-				nx.sendsTo("local");
-				nx.setTransmissionProtocol("ajax");
+
+				//send to ajax and define php relay script path
+				nx.sendsTo("ajax");
+				nx.setAjaxPath("../../lib/nexusOSCrelay.php");
+
 				string1.setStrings(10);
 				string2.setStrings(3);
 
-				//string1.localTransmit = function(data) {
-				//	console.log("local: "+data)
-				//	b.note((data[0]+1)*50);
-				//	prefxBus.amp = data[1];
-				//	d.feedback = Math.abs(1-data[1])*0.7 + 0.3;
-				//}
-
-			//	nx.startPulse();
-/*
-
-				Gibberish.init();
-				prefxBus = new Gibberish.Bus2();
-				prefxBus.connect();
-		
-				b = new Gibberish.KarplusStrong({ damping:0 }).connect(prefxBus);
-			    d = new Gibberish.Delay(prefxBus).connect( Gibberish.out );
-			    d.time = 2000;
-			    d.feedback = 0.95; */
-
-			    nx.printOSC()
 			}
 
 

@@ -2,36 +2,29 @@
 <html>
 	<head>
 		<title>Keyboard</title>
-		<script type="text/javascript" src="../jquery.js"></script>
-		<script type="text/javascript" src="../nexusUI.js"></script>
+		<script type="text/javascript" src="../../lib/nexusUI.js"></script>
 		<script>
 		
-		nx.onload = function() {
-			
-			/* 
-			KNOWN BUGS: key detection not accurate when different num of octaves!
-			 
-			keyboard1.octaves = 4;
-			keyboard1.init(); 
-			
-			*/
+			nx.onload = function() {
 
-			nx.sendsTo("ajax");
-			nx.setAjaxPath("../nexusOSCrelay.php");
+				//send to ajax and define php relay script path
+				nx.sendsTo("ajax");
+				nx.setAjaxPath("../../lib/nexusOSCrelay.php");
 
-			nx.printOSC()
+				keyboard1.octaves = 3
+				keyboard1.init();
 			
-		}
+			}
+			
+		</script>
+
+	</head>
+	<body>
 		
-	</script>
 
-</head>
-<body>
-	
+		<canvas nx="keyboard" width="600px" height="100px"></canvas><br>
+		<canvas nx="keyboard" width="200px" height="50px"></canvas>
+		
 
-	<canvas nx="keyboard"></canvas><br>
-	<canvas nx="keyboard" width="200px" height="50px"></canvas>
-	
-
-</body>
+	</body>
 </html>

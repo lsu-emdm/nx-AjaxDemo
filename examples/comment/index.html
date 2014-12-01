@@ -2,18 +2,21 @@
 <html>
 	<head>
 		<title>Comment</title>
-		<script type="text/javascript" src="../jquery.js"></script>
-		<script type="text/javascript" src="../nexusUI.js"></script>
+		<script type="text/javascript" src="../../lib/nexusUI.js"></script>
 		<script>
 		
 			nx.onload = function() {
+
 				nx.colorize("#0af");
+
+				//set text of first comment
 				comment1.set({
 					text:  "Volume for a Synth"
 				});
+
+				//set font size of second comment
 				comment2.setSize(40);
 
-				nx.printOSC()
 			}
 		
 		</script>

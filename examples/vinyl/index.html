@@ -1,30 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Vinyl</title>
-		<script type="text/javascript" src="../jquery.js"></script>
-		<script type="text/javascript" src="../nexusUI.js"></script>
-		<script type="text/javascript" src="../../dev/vinyl.js"></script>
+<head>
+  <title>:: Nexus Ajax Demo ::</title>
+	<script type="text/javascript" src="../../lib/nexusUI.js"></script>
 		<script>
 		
-		nx.onload = function() {
+			nx.onload = function() {
 
-			nx.sendsTo("ajax");
-			nx.setAjaxPath("../nexusOSCrelay.php");
+				nx.sendsTo("ajax");
+				nx.setAjaxPath("../../lib/nexusOSCrelay.php");
 
-			
-			nx.colorize("#0af")
-			nx.printOSC();
-			
-		}
-		
-		</script>
+				nx.colorize("#0af");
+				
+				slider1.val.value = 0.5
+				slider1.draw();
 
-	</head>
-	<body>
+				slider1.sendsTo("js")
 
-		<canvas nx="vinyl" width="400px" height="400px"></canvas>
-		<canvas nx="vinyl" width="400px" height="400px"></canvas>
-		
-	</body>
+				slider1.on("value",function(d) {
+					vinyl1.defaultspeed = d/10;
+					vinyl2.defaultspeed = d/10;
+				})
+				
+			}	
+
+	</script>
+
+</head>
+<body>
+	
+	<canvas nx="vinyl" style="width:400px;height:400px"></canvas>
+	<canvas nx="vinyl" style="width:400px;height:400px"></canvas><br>
+	<canvas nx="slider" style="width:800px;height:50px"></canvas>
+
+</body>	
 </html>

@@ -2,29 +2,26 @@
 <html>
 	<head>
 		<title>Dial</title>
-		<script type="text/javascript" src="../jquery.js"></script>
-		<script type="text/javascript" src="../nexusUI.js"></script>
+		<script type="text/javascript" src="../../lib/nexusUI.js"></script>
 		<script>
 		
-		nx.onload = function() {
+			nx.onload = function() {
 
-
-			nx.sendsTo("ajax");
-			nx.setAjaxPath("../nexusOSCrelay.php");
+				//send to ajax and define php relay script path
+				nx.sendsTo("ajax");
+				nx.setAjaxPath("../../lib/nexusOSCrelay.php");
 			
-			nx.colorize("red");
-			nx.colorize("border", "white");
+				nx.colorize("red");
+				nx.colorize("border", "white");
 
-			dial2.animate("bounce");
-			nx.startPulse();
+				dial2.animate("bounce");
+				nx.startPulse();
+				
+				dial3.value = 0.75;
+				dial3.draw();
+				
+			}
 			
-			dial3.value = 0.75;
-			dial3.draw();
-
-			nx.printOSC();
-			
-		}
-		
 		</script>
 
 	</head>

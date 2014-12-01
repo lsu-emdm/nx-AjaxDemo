@@ -7,7 +7,7 @@
 			"revision" : 8
 		}
 ,
-		"rect" : [ 427.0, 62.0, 848.0, 677.0 ],
+		"rect" : [ 684.0, 72.0, 848.0, 677.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -386,7 +386,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 70.0, 194.0, 204.0, 23.0 ],
-					"text" : "OSC-route /dial1/value /dial2/value"
+					"text" : "OSC-route /dial1 /dial2"
 				}
 
 			}
@@ -415,7 +415,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 240.0, 140.0, 239.0, 21.0 ],
-					"text" : "/button3/press 0."
+					"text" : "/button1/press 0."
 				}
 
 			}

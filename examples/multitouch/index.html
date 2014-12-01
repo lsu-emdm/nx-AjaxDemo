@@ -2,15 +2,14 @@
 <html>
 	<head>
 		<title>Multitouch</title>
-		<script type="text/javascript" src="../jquery.js"></script>
-		<script type="text/javascript" src="../nexusUI.js"></script>
+		<script type="text/javascript" src="../../lib/nexusUI.js"></script>
 		<script>
 		
 			nx.onload = function() {
 
+				//send to ajax and define php relay script path
 				nx.sendsTo("ajax");
-				nx.setAjaxPath("../nexusOSCrelay.php");
-
+				nx.setAjaxPath("../../lib/nexusOSCrelay.php");
 				
 				nx.colorize("#0af");
 
@@ -26,8 +25,6 @@
 				multitouch3.rows = 10;
 				multitouch3.matrixLabels = [ "A", "B", "C" ];
 				multitouch3.draw();
-
-				nx.printOSC()
 			}
 
 		</script>

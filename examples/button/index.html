@@ -2,15 +2,14 @@
 <html>
 	<head>
 		<title>Button</title>
-		<script type="text/javascript" src="../jquery.js"></script>
-		<script type="text/javascript" src="../nexusUI.js"></script>
+		<script type="text/javascript" src="../../lib/nexusUI.js"></script>
 		<script>
 		
 			nx.onload = function() {
 
 				//send to ajax and devine php relay script path
 				nx.sendsTo("ajax");
-				nx.setAjaxPath("../nexusOSCrelay.php");
+				nx.setAjaxPath("../../lib/nexusOSCrelay.php");
 				
 				// sets a mode for each button. default is toggle.
 				button1.mode = "impulse";
@@ -24,12 +23,10 @@
 				picbutton2.setImage("images/pippin.png");
 				picbutton2.setTouchImage("images/pippinTouch.png");
 
+				//you can dynamically set objects with javascript
 				button1.set({
 					"press": 1
 				})
-
-				//add an OSC debugger for this example page
-				nx.printOSC()
 				
 			}
 			

@@ -1,8 +1,6 @@
 #NexusUI AJAX/PHP Demo
 
-*NOTES:* This repo is being prepared, and the *examples* in /examples do not work. For a working demo, use index.html and receiver.maxpat.
-
-Step 1: Host this folder on an Apache (or other) server.
+Step 1: Host this folder on an Apache server (or other server with PHP enabled).
 
 Step 2: Open index.html in a browser (must be on /localhost/) and receiver.maxpat in Max (and turn on the DAC).
 

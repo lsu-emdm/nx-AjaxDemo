@@ -7,7 +7,7 @@
 			"revision" : 8
 		}
 ,
-		"rect" : [ 148.0, 45.0, 511.0, 610.0 ],
+		"rect" : [ 431.0, 59.0, 511.0, 610.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -339,7 +339,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 56.5, 144.0, 239.0, 21.0 ],
-					"text" : "/vinyl1/speed 1."
+					"text" : "/vinyl2/speed 1."
 				}
 
 			}
